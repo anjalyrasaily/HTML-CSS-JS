@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css grid and media query</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer ';
+      }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+
+        @media only screen and (max-width:300px) {
+            body {
+                background-color: blue;
+                display: block;
+            }
+
+            .container {
+
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                     'footer footer footer footer ';
+            }
+            aside {
+                display: none ;
+            }
+
+            span{
+            display: block;
+        }
+
+        }
+
+        @media only screen and (min-width:300px) and (max-width:500px) {
+            body {
+                background-color: blueviolet;
+                display: block;
+            }
+
+            .container {
+
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+
+
+                    'footer footer footer footer ';
+            }
+            aside {
+                display: none ;
+            }
+            span{
+            display: block;
+        }
+        }
+
+        @media only screen and (min-width:500px) and (max-width:800px) {
+            body {
+                background-color: burlywood;
+                display: block;
+
+            }
+            span{
+            display: block;
+        }
+
+        }
+
+        @media only screen and (min-width:800px) {
+            body {
+                background-color: yellow;
+                display: block;
+            }
+       
+        }
+
+        .border {
+            background-color: rgb(150, 41, 41);
+            padding: 18px 23px;
+            border: 2px solid black;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="border">
+            <span>
+                Home 
+            </span>
+            <span>About us</span>
+            <span> Services</span>
+            <span> Contact</span>
+        </nav>
+        <section class="border">
+            <h2>LEARN CSS IN ENGISH</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dolores autem explicabo mollitia saepe, voluptatem error officia ipsum laboriosam cupiditate, ratione placeat. Sint, reprehenderit nemo. Sint sapiente excepturi modi, quia officia hic molestiae iure, labore voluptas ad, vero unde a impedit voluptatum provident omnis reiciendis amet adipisci. Sapiente maiores voluptatum, laudantium eos culpa qui accusantium voluptatem, adipisci nihil modi cupiditate, animi deleniti distinctio! Qui eligendi sapiente impedit enim officia. Repellendus similique dolorem quia amet ea magni cumque optio veniam, animi dolor, quisquam exercitationem, in nesciunt vel eum voluptates totam modi minima! Recusandae perferendis dicta delectus eligendi cumque esse in sequi laborum maxime soluta error nemo accusamus magni, ad fugit? Beatae sed magni blanditiis nobis laudantium voluptas repellendus perferendis architecto? Cupiditate.</p>
+        </section>
+        <aside class="border">
+            <h1>MORE ABOUT US</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, blanditiis. Distinctio libero optio quisquam unde, fugit ullam minima modi nemo soluta a cumque.</p>
+
+        </aside>
+        <footer class="border">copyright anjali 2022 </footer>
+    </div>
+</body>
+
+</html>
