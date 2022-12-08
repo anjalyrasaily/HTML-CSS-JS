@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and inputs</title>
+</head>
+<body>
+    <h2>This is HTML forms</h2>
+    <form action="backend.java">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" name="myname" id="name">
+    </div>
+    <br>
+    <div>
+        <label for="role">Role:</label>
+        <input type="text" name="myrole" id="role">
+    </div>
+    <br>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" name="myemail" id="email">
+    </div>
+<br>
+   
+    <div>
+        <label for="date"></label>
+        <input type="date" name="mydate" id="date">
+    </div>
+<br>
+    <div>
+        <label for="age">Age:</label>
+        <input type="number" name="mydate" id="age">
+    </div>
+    <br>
+    
+    <div>
+        <label for="eligible">Are you eligible</label>
+        <input type="checkbox" name="myeligibility" id="eligible" checked>
+    </div>
+    <br>
+    <div>
+<label for="gender">Gender:</label>
+       Male <input type="radio" name="mygender" id="gender">
+       Female <input type="radio" name="mygender" id="gender">
+    other <input type="radio" name="mygender" id="gender">
+    </div>
+    <br>
+   <div>
+    <label for="about">About yourself:<br></label>
+    <textarea name="mytext" id="about" cols="30" rows="10"></textarea>
+   </div>
+   <br>
+   <div>
+   <label for="vehicle">Vehicles:</label>
+   <select name="myvehicle" id="vehicle">
+    <option value="none" selected>NONE</option>
+    <option value="bus">BUS</option>
+    <option value="car">CAR</option>
+    <option value="bike">Bike</option>
+   </select>
+</div>
+<br>
+
+    <div>
+        
+        <input type="submit" value="Submit now">
+        <input type="reset" value="Reset now" >
+    </div>
+</form>
+</body>
+</html>

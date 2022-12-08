@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Before and After Pseudo Selectors </title>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+
+
+        }
+
+        header::before {
+            content: "";
+            background: url('https://images.unsplash.com/photo-1461988320302-91bde64fc8e4?ixid=2yJhcHBfaWQiOjEyMDd9&w=750&dpr=2') no-repeat center center/cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.3;
+
+        }
+
+        .navigation {
+            font-family: 'EB Garamond', serif;
+            font-size: 20px;
+            display: flex;
+
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 23px;
+        }
+
+        section {
+            height: 344px;
+            display: flex;
+            flex-direction: column;
+            padding: 3px 23px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* section::before{
+            content:"This is content"
+        } */
+        h1 {
+
+            font-size: 4rem;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">Services</li>
+                <li class="item">About</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>
+            Welcome to Coding WOrld
+        </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex expedita delectus eius perferendis corrupti
+            ea consequuntur laudantium rerum similique. Quisquam ad dicta nulla quas laboriosam, mollitia error
+            totam assumenda fugit consectetur. Amet, officiis eos.</p>
+
+    </section>
+
+
+</body>
+
+</html>
