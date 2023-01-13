@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays & objects</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>This is about array and objects</h1>
+      <ul>
+        <li>JavaScript arrays are resizable and can contain a mix of different data types. (When those characteristics are undesirable, use typed arrays instead.</li>
+        <li>JavaScript arrays are not associative arrays and so, array elements cannot be accessed using arbitrary strings as indexes, but must be accessed using nonnegative integers (or their respective string form) as indexes.</li>
+        <li>JavaScript arrays are zero-indexed: the first element of an array is at index 0, the second is at index 1, and so on — and the last element is at the value of the array's length property minus 1.</li>
+        <li>JavaScript array-copy operations create shallow copies. (All standard built-in copy operations with any JavaScript objects create shallow copies, rather than deep copies).</li>
+      </ul>
+    </div>
+    <script>
+        let myvar1=34;
+         let myvar2="string";
+         let myvar3=true;
+         let myvar4=null;
+         let myvar5=undefined;
+
+
+         /**Objects**/
+        /* let employee={
+          name:'Anjali',
+          salary:100,
+          occupation1:"Programmer",
+        //   occupation1:"coder",
+          "occupation 2":"Coder"
+
+         }
+console.log(employee);*/
+
+/****Array****/
+/*
+let names= [1,2,3,4,"ANJALI",undefined];
+let names= new array[1,2,3,4,"ANJALI",undefined];*/
+let names=new Array(23);
+
+console.log(names);
+names=names.sort();
+names.push("this is pushed");
+console.log(names.length);
+
+    </script>
+</body>
+</html>

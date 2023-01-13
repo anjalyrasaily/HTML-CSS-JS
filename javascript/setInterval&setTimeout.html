@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeout and ClearTimeout</title>
+</head>
+<body>
+    <div class="container">
+        <h1>THIS IS HEADING</h1>
+
+        Time now is <span id="time"></span>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus atque vel laudantium nam. Ratione enim natus accusamus, corporis iusto doloremque nobis rem dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam illo culpa vero dolor debitis ipsam, nemo maxime. Similique qui quis magni repellat numquam eligendi eius dolore! Pariatur architecto sint suscipit est dolorem cupiditate ut, quis omnis consectetur quaerat provident enim natus fuga quam? </p>
+    </div>
+    <script>
+//SetTimeout---->Allows us to run a function once after interval of time
+//ClearTimeout---->Allows us to run a function repeatedly after interval of time
+function greet(name,byText){
+    console.log('Hello!!!Good morning:)'+name+byText)
+}
+// timeOut= setTimeout(greet, 5000,' Anjali',' take care');
+// console.log(timeOut);
+
+// clearTimeout(timeOut);
+
+//setTimeout(greet(),5000)----->Function cannot be called simply name should be written
+
+
+   intervalId=setInterval(greet, 5000,' Anjali',' take care');
+console.log(intervalId);
+
+clearInterval(intervalId);
+
+
+function displayTime(){
+    time=new Date();
+    console.log(time);
+    document.getElementById('time').innerHTML=time;
+} 
+setInterval(displayTime,1000);
+    </script>
+</body>
+</html>
